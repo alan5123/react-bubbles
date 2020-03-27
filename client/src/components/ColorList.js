@@ -21,16 +21,7 @@ const ColorList = ({ colors, updateColors }) => {
   };
 
    
-  const changeHandler = ev => {
-    ev.persist();
-    let value = ev.target.value;
- 
 
-    setColorToEdit({
-      ...colorToEdit,
-      [ev.target.name]: value
-    });
-  };
 
   
   
@@ -138,6 +129,7 @@ const ColorList = ({ colors, updateColors }) => {
       )}
       <div className="spacer" />
       {/* stretch - build another form here to add a color */}
+     
     </div>
   );
 };
